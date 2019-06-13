@@ -16,7 +16,7 @@
 
 如果你需要为输入指定一个固定大小的batch_size（常用于stateful RNN网络），可以传递batch_size参数到一个层中，例如你想指定输入张量的batch大小是32，数据shape是（6，8），则你需要传递batch_size=32和input_shape=(6,8)
 
-![Deep Learning](pictures/dp)
+![Deep Learning](pictures/dp.webp)
 
 # 1. 基于RNN实现文本分类任务
 
@@ -316,7 +316,7 @@ plt.plot(losses.T[3], label='Generator')
 plt.title("Training Losses")
 plt.legend()
 ```
-![ax](pictures/ax)
+![ax](pictures/ax.png)
 - 结果展示
 ```python
 def view_samples(epoch, samples):
@@ -343,4 +343,4 @@ with tf.Session() as sess:
 _ = view_samples(-1, samples) # 显示最后一轮的outputs
 ```
 
-![results](res)
+![results](pictures/res.png)
